@@ -1,11 +1,12 @@
-import Number from "./components/Number";
+import Number from "./components/Number"
+
 
 const App = () => {
   return (
     <>
-      <Number/>
+    <Number/>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App

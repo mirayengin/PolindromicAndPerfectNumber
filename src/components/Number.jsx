@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./Number.css"
 
-const Number = () => {
+const NumberComp = () => {
   const [lowNumber, setLowNumber] = useState(0);
   const [highNumber, setHighNumber] = useState(0);
 
@@ -30,13 +31,13 @@ const Number = () => {
     let array = [];
     for (let i = Number(lowNumber); i < highNumber; i++) {
       let sum = 0;
-      for (let j = 0; j < i / 2; j++) {
+      for (let j = 1; j <= i / 2; j++) {
         if (i % j === 0) {
           sum += j;
         }
         // console.log(sum);
       }
-      if ((sum === i) & (sum !== 0)) {
+      if ((sum === i) && (sum !== 0)) {
         array.push(sum);
     }
     }
@@ -63,7 +64,7 @@ const Number = () => {
   // console.log(polidnumber);
 
   return (
-    <div className="container text-center m-5 g-5">
+    <div className="container text-center mt-5 g-5">
       <h1>PERFECT AND POLİNDROM NUMBER LİST</h1>
       <div className="Pdiv">
         <p>
@@ -116,6 +117,7 @@ const Number = () => {
       <div className="button d-flex justify-content-center mt-5">
         <div className="btn1 mx-5">
           <button
+            style={{width:"20rem"}}
             onClick={perfectClick}
             type="button"
             className="btn btn-primary btn-lg bg-success"
@@ -126,6 +128,7 @@ const Number = () => {
 
         <div className="btn2 "></div>
         <button
+          style={{width:"20rem"}}
           onClick={polidClick}
           type="button"
           className="btn btn-secondary btn-lg bg-danger"
@@ -134,15 +137,17 @@ const Number = () => {
         </button>
       </div>
 
-      <div className="desc">
-        <div className="perfect">
-          {perfectnumber.map((item) => <p>{ item}</p>)}
+      <div  className="container d-flex justify-content-center w-100 desc">
+        <div style={{ width: "4rem"}} className="perfect text-center">
+          {perfectnumber.map((item, index) => <li className="text-start w-100" key={index} style={{width:"4rem"}}>{ item}</li>)}
         </div>
 
-        <div className="polid"></div>
+        <div style={{width:"4rem"}} className="polid text-md-center">
+        {polidnumber.map((item, index) => <li className="text-start w-100" key={index} style={{width:"4rem"}}>{ item}</li>)}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Number;
+export default NumberComp;

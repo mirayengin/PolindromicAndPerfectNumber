@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Number.css"
+import "./Number.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const NumberComp = () => {
   const [lowNumber, setLowNumber] = useState(0);
@@ -37,17 +38,16 @@ const NumberComp = () => {
         }
         // console.log(sum);
       }
-      if ((sum === i) && (sum !== 0)) {
+      if (sum === i && sum !== 0) {
         array.push(sum);
-    }
+      }
     }
     console.log(array);
     setPerfectnumber(array);
+
   };
 
   console.log(perfectnumber);
-
-
 
   const polidClick = () => {
     // console.log(lowNumber);
@@ -64,7 +64,7 @@ const NumberComp = () => {
   // console.log(polidnumber);
 
   return (
-    <div className="container text-center mt-5 g-5">
+    <div className=" text-center pt-5 g-5">
       <h1>PERFECT AND POLİNDROM NUMBER LİST</h1>
       <div className="Pdiv">
         <p>
@@ -94,57 +94,72 @@ const NumberComp = () => {
         </p>
       </div>
 
-      <div className="Input d-flex justify-content-evenly ">
-        <div  className="one">
+      <div className="Input d-flex justify-content-center ">
+
           <input
+            style={{ width: "25%" }}
             onChange={oneNumber}
             type="text"
             aria-label="First name"
-            className="form-control low"
+            className="form-control low mx-2"
           />
-        </div>
 
-        <div  className="two">
+
+
           <input
+            style={{ width: "25%" }}
             onChange={twoNumber}
             type="text"
             aria-label="Last name"
-            className="form-control high"
+            className="form-control high mx-2"
           />
-        </div>
+
       </div>
 
-      <div className="button d-flex justify-content-center mt-5">
-        <div className="btn1 mx-5">
-          <button
-            style={{width:"20rem"}}
-            onClick={perfectClick}
-            type="button"
-            className="btn btn-primary btn-lg bg-success"
-          >
-            Perfect Number List
-          </button>
-        </div>
-
-        <div className="btn2 "></div>
+      <div className="button d-flex justify-content-center mt-3">
         <button
-          style={{width:"20rem"}}
+          style={{ width: "25%" }}
+          onClick={perfectClick}
+          type="button"
+          className="btn btn-primary btn-lg bg-success mx-2 d-flex justify-content-center"
+        >
+          Perfect Number List
+        </button>
+
+        <button
+          style={{ width: "25%" }}
           onClick={polidClick}
           type="button"
-          className="btn btn-secondary btn-lg bg-danger"
+          className="btn btn-secondary btn-lg bg-danger mx-2 d-flex justify-content-center"
         >
           Polindrom Number List
         </button>
       </div>
 
-      <div  className="container d-flex justify-content-center w-100 desc">
-        <div style={{ width: "4rem"}} className="perfect text-center">
-          {perfectnumber.map((item, index) => <li className="text-start w-100" key={index} style={{width:"4rem"}}>{ item}</li>)}
-        </div>
+      <div className="d-flex justify-content-center  desc">
+        <ul style={{ width: "25%" }} className="perfect text-center mx-2">
+          {perfectnumber.map((item, index) => (
+            <li
+              className="text-start w-100"
+              key={index}
+              // style={{ width: "25%" }}
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
 
-        <div style={{width:"4rem"}} className="polid text-md-center">
-        {polidnumber.map((item, index) => <li className="text-start w-100" key={index} style={{width:"4rem"}}>{ item}</li>)}
-        </div>
+        <ul style={{ width: "25%" }} className="polid text-center mx-2">
+          {polidnumber.map((item, index) => (
+            <li
+              className="text-start w-100"
+              key={index}
+              // style={{ width: "4rem" }}
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

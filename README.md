@@ -1,26 +1,39 @@
-# Project : Template
+# Project : Palindromic and Perfect Numbers Lists
 
-## Check The Live Website ➡️ [Live Website](https://skycooper.github.io)
+## Check The Live Website ➡️ [Live Website](https://palindromicandperfectnumbers-2acqirzqc-coopersky.vercel.app/)
 
 ## Visualization of the Website
 
-![Form](./gallery.gif)
+![Form](./AnimationPerfectPolindrom.gif)
 
 ## Description
 
-Project aims to create an image gallery app using React.
+**What is the palindromic numbers?**
+> A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number (such as 16461) that remains the same when its digits are reversed. In other words, it has reflectional symmetry across a vertical axis. The term palindromic is derived from palindrome, which refers to a word (such as rotor or racecar) whose spelling is unchanged when its letters are reversed. <br>
+The first 30 palindromic numbers (in decimal) are:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111, 121, 131, 141, 151, 161, 171, 181, 191, 202, … [Wikipedia](https://en.wikipedia.org/wiki/Palindromic_number)<br>
+
+**What is perfect numbers?**
+> Perfect Number: In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. For instance, 6 has divisors 1, 2 and 3, and 1 + 2 + 3 = 6, so 6 is a perfect number. [Wikipedia](https://en.wikipedia.org/wiki/Perfect_number)
 
 ## Learning Outcomes
 
-At the end of the project, you will be able to;
+At the end of the this coding challenge, students will be able to;
 
-- improve coding skills within HTML & CSS & JS & ReactJS.
+- analyze a problem, identify and apply programming knowledge for appropriate solution.
 
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
+- demonstrate their knowledge of algorithmic design principles by using JavaScript effectively.
 
 ## Problem Statement
 
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
+- Take one or two inputs from user. List the results in the relevant fields using two different buttons.
+
+- Examples:
+
+  - if top low limit is 0 and limit value is 1000. List all palindromic and perfect numbers between 0 and 1000.
+
+  - if top low limit is 50 and limit value is 100. List all palindromic and perfect numbers between 50 and 100.
 
 ## Project Skeleton
 
@@ -32,14 +45,12 @@ Image Gellery Project(folder)
 │     └── index.html
 ├── src
 │    ├── components
-│    │       ├── Picture.jsx
-│    ├── pages
-│    │       ├── Homepage.jsx
-│    ├── helper
-│    │       └── data.js
-│    ├── styles
-│    │       ├── style.css
+│    │       ├── Number.jsx
+│    │       ├── Number.css
+│    ├── App.css      
 │    ├── App.js
+│    │       
+│    ├── index.css
 │    ├── index.js
 └── package.json
 ```
@@ -49,92 +60,4 @@ Image Gellery Project(folder)
 I mastered HTML & CSS & JS & ReactJS features in this project.
 You can see the visual representation of the website above.
 
-## Notes
-
-- Step 1: Create React App using `npx create-react-app image-gallery`
-
-- Step 2: For images you can use [Images](./src/helper/data.js).
-
-- Step 3: Push your application into your own public repo on Github
-
-- Step 4: Add project gif to your project and README.md file.
-
-## Resources
-
-- 🔥 You can use [`data.js`](./src/helper/data.js) for your own work.
-
-## Support
-Open an Issue, I will check it a soon as possible 👀
-Don't forget to start the repo ⭐
 # <center> ⌛ Happy Coding ✍ </center>
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

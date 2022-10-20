@@ -1,3 +1,42 @@
 .perfect {
-  margin-right: 28%;
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 250px;
+  overflow: auto;
+  
 }
+
+.perfect li {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+
+
+.polid {
+  overflow: auto;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 20px 0;
+  height: 250px;
+  
+}
+
+.polid li {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.Pdiv p {
+  font-weight: bolder;
+  border: 2px solid black;
+  background-color:rgba(0, 255, 255, 0.56);
+} 
+
+.form-control {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+
